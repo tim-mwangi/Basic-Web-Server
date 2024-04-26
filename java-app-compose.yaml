@@ -1,0 +1,12 @@
+services:
+  server:
+    build:
+      context: ./
+#    volumes:
+#      - type: bind
+#        source: ./apps/certs/
+#        target: /etc/certs/
+#    environment:
+#      - TLS=${TLS_SERVER}
+    ports:
+      - 6789:6789
