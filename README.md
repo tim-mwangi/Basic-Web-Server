@@ -31,3 +31,7 @@ This project is licensed under the terms of the MIT license.
     - In your browser of choice type **`localhost:6789/index`**, **`localhost:6789/`**, **`localhost:6789`**, or
     **`localhost:6789/index.htm`** into the address bar. Typing any of the above will redirect you
     to the index.html page with the Hello message and image.
+
+## Building and Deploying on Docker
+Run `docker compose -f java-app-compose.yaml up --force-recreate --build -d` to build and deploy a docker container running the app.
+Run `docker compose -f java-app-compose.yaml down` to remove the container.
